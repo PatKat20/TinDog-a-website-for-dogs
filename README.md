@@ -9,7 +9,9 @@
 ### Tecnologias utilizadas
 
 - Bootstrap V5;
-- JavaScript puro;
+- JavaScript puro (Só para o carrousel);
+- HTML5
+- CSS3
 
 
 
