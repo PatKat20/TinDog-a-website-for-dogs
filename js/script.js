@@ -3,11 +3,12 @@ const slides = document.querySelectorAll(".slide");
 let curSlide = 0;
 let maxSlide = slides.length - 1;
 
-function translateSlide(){
+function translateFirstSlide(){
     slides[1].style.transform = "translateX(100%)";
 }
 
-setInterval(function() {
+function translateSlide(){
+let myInterval = setInterval(function() {
     if(curSlide === maxSlide){
         curSlide = 0;
     } else{
@@ -18,3 +19,8 @@ setInterval(function() {
         slide.style.transform = `translateX(${(indx - curSlide) * 100}%)`;
     })
 }, 6000);
+
+return myInterval
+}
+
+
